@@ -12,6 +12,7 @@ Route::get('/home', function () {
 
     return redirect()->route('admin.home');
 });
+
 //logout
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
