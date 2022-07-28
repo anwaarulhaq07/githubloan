@@ -131,7 +131,10 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 
     }
 });
 
+// Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => ['auth']], function () {
 
+
+// });
 
 // For Excel
 Route::get('importExportView', 'ExcelController@importExportView');
@@ -145,4 +148,8 @@ Route::get('complete_mortage_export', 'ExcelController@complete_mortage_export')
 
 Route::get('install_pay/{id}', 'Admin\BalloonInstallmentController@install_pay')->name('install_pay');
 Route::get('mortage_pay/{id}', 'Admin\detailController@mortage_pay')->name('mortage_pay');
+
+
+// for rental properties
+
 
